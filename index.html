@@ -1,74 +1,936 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "The three sees of content design"}' />
+		<title>The three sees of content design</title>
 
-    <title>TITLE</title>
+		<meta name="description" content="The three sees of content design. A companion to lookandpoint.com/three-sees">
 
-    <link rel="stylesheet" href="reveal.js/dist/reset.css" />
-    <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="reveal.js/dist/theme/solarized.css" id="theme" />
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
 
-    <!-- Theme used for syntax highlighted code -->
-    <link
-      rel="stylesheet"
-      href="reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section
-          data-markdown
-          data-separator="-----"
-          data-separator-vertical="---"
-        >
-          <textarea data-template>
-            # Title Page
 
-            ### Date
 
-            -----
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal {
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* latin-ext */
+  /* latin */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* cyrillic-ext */
+  /* cyrillic */
+  /* greek-ext */
+  /* greek */
+  /* vietnamese */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+  /* latin-ext */
+  /* latin */
+}
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v14/P5sEzZiAbNrN8SB3lQQX7PncwdMXIKVODzr8XA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v14/P5sEzZiAbNrN8SB3lQQX7PncwdoXIKVODzr8XA.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v14/P5sEzZiAbNrN8SB3lQQX7PncwdAXIKVODzr8XA.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/balsamiqsans/v14/P5sEzZiAbNrN8SB3lQQX7Pncwd4XIKVODzo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYAhTIfFd3IhG.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYQhTIfFd3IhG.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfbwhTIfFd3A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyU5rZPoAU.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.reveal * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.reveal .slides {
+  font-size: 0.8em;
+}
+.reveal .slides h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+}
+.reveal .slides h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.reveal .slides h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.reveal .slides p,
+.reveal li {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+.reveal .no-dec > ul {
+  list-style: none;
+  margin-left: 0px;
+}
+.reveal .postit p {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 0.7em;
+  background: #ffd966;
+  border: 1px solid #E8E8E8;
+  padding: 20px;
+}
+.reveal .serif-txt {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.9em;
+}
+.reveal .wrap {
+  display: flex;
+}
+.reveal .wrap span {
+  align-self: flex-end;
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-overpass2 theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="e1e672ee6c415e8073b7de1915437bbb" data-auto-animate="" data-background-image="3c/be719e46fa226c4948623d3e5512ee54.gif"><div class="sl-block" data-block-type="text" style="width: 642px; left: 159px; top: 216px; height: auto;" data-name="text-593ff9" data-block-id="f8e03782716a318dffe24dee889ad2d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(168, 39, 107);" data-has-custom-html=""><div class="wrap">
+<h1><span>the three sees of content design</span></h1>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 496px; left: 232px; top: 343.5px; height: auto;" data-name="text-3b4fe1" data-block-id="49619a9bde04b513f527042ab84e3c30"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11; color: rgb(0, 0, 0);"><h2>just, like, my opinion man</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 354px; left: 303px; top: 491px; height: auto;" data-name="text-a76495" data-block-id="e9363b318609c25dc00bf5272965d367"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12; color: rgb(109, 158, 235); font-size: 90%;"><h3>V. Sri, Content Designer</h3></div></div>
+
+</section><section data-id="da2f68dbb9f2f7d8b809220ee9a9de56" data-background-color="rgb(34, 34, 34)"><div class="sl-block" data-block-type="text" style="width: 311px; left: 114px; top: 149px; height: auto;" data-block-id="b553ec92b7ea6fda3b4df1e2123e3acd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(254, 193, 2); text-align: left;"><h2>These are Principles</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 220px; left: 599px; top: 149px; height: auto;" data-block-id="880b4f31e2e97de2079ec1cc9d70bcf4" data-name="text-4d6ac3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(254, 131, 2); text-align: left;"><h2>three sees are targets</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 114px; top: 262px; height: auto;" data-block-id="a36d9289fdfbb56dac62698bd98a3206" data-name="text-218efc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(254, 193, 2); text-align: left;"><p>Start with the story</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 114px; top: 345px; height: auto;" data-block-id="010fc6ad910469517060fc41ebf1a0f4" data-name="text-66b76b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 13; color: rgb(254, 193, 2); text-align: left;"><p>Look for patterns</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 114px; top: 428px; height: auto;" data-block-id="468328f503174807e588a4f2baf9a13f" data-name="text-9294bf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14; color: rgb(254, 193, 2); text-align: left;"><p>Respect the user</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 114px; top: 511px; height: auto;" data-block-id="a72c1ff3101ca82fcf18b6c98f103b3f" data-name="text-2ab945"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 15; color: rgb(254, 193, 2); text-align: left;"><p>Solve the real problem</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 599px; top: 262px; height: auto;" data-block-id="4b012ece5d299cd13a8666e26bfb48de" data-name="text-9bab5a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 16; color: rgb(254, 131, 2); text-align: left;"><p>Consistent</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 599px; top: 350px; height: auto;" data-block-id="2e64afdcf4693e9ca853f24b2d3f2ba8" data-name="text-294de6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 17; color: rgb(254, 131, 2); text-align: left;"><p>Cohesive</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 311px; left: 599px; top: 433px; height: auto;" data-block-id="d02be880985500796a708a0e3e226f98" data-name="text-395069"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 18; color: rgb(254, 131, 2); text-align: left;"><p>Clear</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-681232" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 480px; top: 107px;" data-block-id="df7e4118cdfeca128484fe22e9f0248a"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="3.095438626020424e-14" data-line-y2="505.5234910466575" data-line-color="#444444" data-line-width="2px" data-line-start-type="none" data-line-end-type="none" data-line-style="solid-rounded" style="z-index: 19; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="slide-up"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="505.5234910466575" viewbox="0 0 1 505.5234910466575"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#444444" stroke-width="2" stroke-linecap="round" d="M0 0 L0 505.523"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L0 505.523"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L0 505.523"></path></svg></div></div></section><section data-background-color="rgb(34, 34, 34)" data-id="b9c39b91ab8deb6d677e0c163e8a262d"><div class="sl-block" data-block-type="text" style="width: 471.66px; left: 80px; top: 144px; height: auto;" data-block-id="6557c8a806425b6daaff599fc93ce335"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(254, 193, 2); transition-duration: 0.6s; text-align: left;" data-animation-type="slide-left"><h1>Principles are different</h1></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 288px; height: auto;" data-name="text-525e16" data-block-id="42d53cd2ea3e7268df764035e4ccd27e"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(254, 193, 2); text-align: left;">
+<p>Principles are like lane markers on the highway. They keep you from veering off road. They guide you when visibility is low. Though their power is largely symbolic, principles have a real impact on how we drive—and how we design.</p>
+
+<p> </p>
+
+<p> </p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 416.5px; height: auto;" data-block-id="c5c9a5304d3df693602ed7a229b04e7d" data-name="text-d6752a"><div class="sl-block-style" style="z-index: 12; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(254, 193, 2); text-align: left; transition-duration: 0.6s; transition-delay: 0.6s;" data-animation-type="fade-in"><p><span style="color:rgb(254, 193, 2); font-size:22.4px">But principles are not the same as your destination.</span></p></div></div></div></section><section data-id="4c8d9098af21b16635afe66c7aab755b" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 332px; height: auto;" data-block-id="eb0e18964225b0247aa298ee5cd60213" data-name="text-3d7ffe"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Targets</h1></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-8d5395" data-block-id="d50b3714d7355907ada144e8ad9d74d0" style="width: 300px; height: 300px; left: 560px; top: 210px;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300"><ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 300px; height: 300px; left: 510px; top: 210px;" data-block-id="1b291619ad5356c2f0963aea9da1c463" data-name="shape-ddea04"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300"><ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 300px; height: 300px; left: 466px; top: 210px;" data-block-id="c000293ca151713cc3b661aed54ff415" data-name="shape-9d17e3"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300"><ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 281.5px; height: auto;" data-block-id="a29ec3a7a9d26b3750b94d1e5abf8a4f" data-name="text-b4265f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 15;"><p>The three sees are</p></div></div></section><section data-id="80da72610acc6653b84d7d56fd2bacf9" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-8d5395" style="width: 300px; height: 300px; left: 560px; top: 210px;" data-block-id="3280d1481b23069efb9d0248ebd9f115">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300">
             
-            ---
+        <ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 300px; height: 300px; left: 510px; top: 210px;" data-name="shape-ddea04" data-block-id="9bfbf4119bbd2c44154f7df20583c800">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300">
             
-            ---
+        <ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 300px; height: 300px; left: 466px; top: 210px;" data-name="shape-9d17e3" data-block-id="d2d1d2f0646f67ee8f7593142d45f675">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 300 300">
             
-            ---
+        <ellipse rx="150" ry="150" cx="150" cy="150" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 176.883px; height: auto;" data-name="text-b4265f" data-block-id="b2f4e04de272e3fce57679afbeec526a">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14; text-align: left;">
+<p>Targets answer questions about where the design is headed.</p>
+
+        <p> </p>
+
+        <p>Questions like: "What counts as good content design?" And "How do we know if we've succeeded?" And "What is the purpose of content design?"</p>
+</div>
+</div></section><section data-id="52f9c681489d054771752c336822c86a" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-8d5395" style="width: 384.401px; height: 384.401px; left: 527.799px; top: 167.799px;" data-block-id="7342acdd09854e7164e023da74651760"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 384 384"><ellipse rx="192.2005" ry="192.2005" cx="192.2005" cy="192.2005" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 290.401px; height: 290.401px; left: 582.567px; top: 261.799px;" data-name="shape-ddea04" data-block-id="3b88b8a513aa2b97dab9e54cefe63665"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 290 290"><ellipse rx="145.2005" ry="145.2005" cx="145.2005" cy="145.2005" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 193.401px; height: 193.401px; left: 624.5px; top: 358.799px;" data-name="shape-9d17e3" data-block-id="4eacb309a1c3fee0645bc9f8019676a7"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 193 193"><ellipse rx="96.7005" ry="96.7005" cx="96.7005" cy="96.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-394fc3" data-block-id="b597ef2cea5d86d1310dd01365f5c298" style="height: auto; width: 237px; left: 602.702px; top: 387.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); font-size: 80%;"><p>Clear</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 602.702px; top: 303.299px;" data-block-id="69fed9122e11ac39c8a331754a3ff11f" data-name="text-9e899a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255); font-size: 80%;"><p>Cohesive</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 602.702px; top: 215.299px;" data-block-id="4082705c2be1afa014d18abb9ed9431f" data-name="text-0bb8fa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(255, 255, 255); font-size: 80%;"><p>Consistent</p></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 176.883px; height: auto;" data-block-id="658335450dac919289e3d3e825960325" data-name="text-b4265f">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; text-align: left;">
+<p style="color:rgb(0, 0, 0); font-size:22.4px"><strong>These are our targets</strong></p>
+
+<p style="color:rgb(0, 0, 0); font-size:22.4px"> </p>
+
+<p style="color:rgb(0, 0, 0); font-size:22.4px">The purpose of content design is to ensure experiences are consistent, cohesive, and clear.</p>
+</div>
+</div></section><section data-id="c47d22ec01ee724a72c92ade6071a82a" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-8d5395" style="width: 384.401px; height: 252.401px; left: 528.799px; top: 290px;" data-block-id="2340c5edfbb1823a36da9a0d1af6b797"><div class="sl-block-style" style="z-index: 10; filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 30px 5px) opacity(100%);"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 384 252"><ellipse rx="192.2005" ry="126.2005" cx="192.2005" cy="126.2005" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 290.401px; height: 152.401px; left: 574.799px; top: 246.598px;" data-name="shape-ddea04" data-block-id="bcb9b64eafa6656f82b3e99b69e77e37"><div class="sl-block-style" style="z-index: 11; filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 30px 6px) opacity(100%);"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 290 152"><ellipse rx="145.2005" ry="76.2005" cx="145.2005" cy="76.2005" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 193.401px; height: 103.401px; left: 623.299px; top: 177.299px;" data-name="shape-9d17e3" data-block-id="095d1b298cff68b48578c6938bf4752c"><div class="sl-block-style" style="z-index: 12; filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 20px 15px) opacity(100%);"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 193 103"><ellipse rx="96.7005" ry="51.7005" cx="96.7005" cy="51.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-394fc3" style="height: auto; width: 237px; left: 616.5px; top: 211.694px;" data-block-id="66c940a9138c821e3e8974cfa52c6948"><div class="sl-block-style" style="z-index: 13; transform: rotate(-15deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);"><p>Clear</p></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 624.308px; top: 320.006px;" data-name="text-9e899a" data-block-id="95fa29c66a42bbbbeefc71af03cdaa8b"><div class="sl-block-style" style="z-index: 14; transform: rotate(-15deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255);"><p>Cohesive</p></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 641.009px; top: 441.91px;" data-name="text-0bb8fa" data-block-id="80b71ac3b09f64cab4434379d6139105"><div class="sl-block-style" style="z-index: 15; transform: rotate(-15deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255);"><p>Consistent</p></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 176.883px; height: auto;" data-name="text-b4265f" data-block-id="80c975f4ba5c659b91c96ee44e0488c8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 16; text-align: left;">
+<p><strong>You aim for them in a specific order</strong></p>
+
+<p> </p>
+
+<p>Because they <em>build</em> on one another. They are not three different targets, but they are all aiming at one thing.</p>
+</div></div></section><section data-id="311667245b89a67b0b1d53ab45cf67e1" data-auto-animate="" data-background-color="rgb(255, 255, 255)"><div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 176.883px; height: auto;" data-name="text-b4265f" data-block-id="32c2dcf03d65bb2c698edc01f4fae06f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; text-align: left;">
+<p><strong>The ultimate goal is clarity</strong></p>
+
+<p> </p>
+
+<p>First, you make the experience consistent, then you make it cohesive, and <em>only then</em> can you make it clear.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-8d5395" style="width: 384.401px; height: 384.401px; left: 527.799px; top: 167.799px;" data-block-id="0c4e8c4f4aee1ad405e882389fc05bc9"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 384 384"><ellipse rx="192.2005" ry="192.2005" cx="192.2005" cy="192.2005" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 290.401px; height: 290.401px; left: 574.799px; top: 214.799px;" data-name="shape-ddea04" data-block-id="548222d8b8a757567aa38e12e419dd68"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 290 290"><ellipse rx="145.2005" ry="145.2005" cx="145.2005" cy="145.2005" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 193.401px; height: 193.401px; left: 623.299px; top: 263.299px;" data-name="shape-9d17e3" data-block-id="d53e1a690bce9c247f2e34c71993c43e"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 193 193"><ellipse rx="96.7005" ry="96.7005" cx="96.7005" cy="96.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-394fc3" style="height: auto; width: 237px; left: 553.223px; top: 388.811px;" data-block-id="1f782bb02678b3af91bac73b7edf50a9"><div class="sl-block-style" style="z-index: 15; transform: rotate(50deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 50%; color: rgb(255, 255, 255);"><p>Clear</p></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 510.392px; top: 415.5px;" data-name="text-9e899a" data-block-id="1c4cba96b96658ba210273ea8ca17dc8"><div class="sl-block-style" style="z-index: 16; transform: rotate(50deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 50%; color: rgb(255, 255, 255);"><p>Cohesive</p></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 237px; left: 472.392px; top: 451.796px;" data-name="text-0bb8fa" data-block-id="5a3096b5a1ad1fd55768f538618dfe0e"><div class="sl-block-style" style="z-index: 17; transform: rotate(50deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 50%; color: rgb(255, 255, 255);"><p>Consistent</p></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d6a541" data-block-id="b993ccf9f7f7bd4c481d26d7e1abdaf3" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 520px; top: 360px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="162.7041426064643" data-line-x2="200" data-line-y2="0" data-line-color="#000000" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="200" height="162.7041426064643" viewbox="0 0 200 162.7041426064643"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" d="M0 162.704 L198.449 1.262"></path><path stroke="#000000" stroke-width="2" d="M 190.783 -0.237 L 199.224 0.631 L 198.356 9.072 L 199.224 0.631" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 162.704 L200 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 162.704 L200 0"></path></svg></div></div></section><section data-background-color="rgb(34, 34, 34)" data-id="409b45afcb1ede9502d9b35c6236e76f" data-auto-animate="" data-visibility="hidden"><div class="sl-block" data-block-type="text" style="width: 311px; left: 104px; top: 326.5px; height: auto;" data-name="text-4d6ac3" data-block-id="ab48d01175a16f81a77282c3c519b525"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); text-align: center;"><h2>How to find clarity</h2></div></div>
+
+
+
+<div class="sl-block" data-block-type="shape" data-name="shape-8d5395" style="width: 384.401px; height: 384.401px; left: 500.738px; top: 164.399px;" data-block-id="3fd10d8c413d6f0bd0d9ea827be215d4"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(150, 20, 29)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 384 384"><ellipse rx="192.2005" ry="192.2005" cx="192.2005" cy="192.2005" class="shape-element" fill="rgb(150, 20, 29)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 290.401px; height: 290.401px; left: 547.738px; top: 211.399px;" data-name="shape-ddea04" data-block-id="402e6f59b6807901306b74c65bac1107"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 290 290"><ellipse rx="145.2005" ry="145.2005" cx="145.2005" cy="145.2005" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 193.401px; height: 193.401px; left: 596.238px; top: 259.899px;" data-name="shape-9d17e3" data-block-id="0b9066225f1b4a0db661772ef6ce2538"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 193 193"><ellipse rx="96.7005" ry="96.7005" cx="96.7005" cy="96.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></section><section data-id="e9adef21523e632004dffff550d4a7e4" data-auto-animate="" data-background-color="rgb(150, 20, 29)"><div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 195px; height: auto;" data-name="text-b4265f" data-block-id="fddd78a34e92002166254f50d43bf9e2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 27; text-align: left; color: rgb(255, 255, 255);">
+<p><strong>Keep things consistent</strong></p>
+
+<p> </p>
+
+<p>The content designer's first job is to ensure the experience is consistent.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-6a88aa" style="width: 50px; height: 67px; left: 160px; top: 117px;" data-block-id="26262881b7fa14d9da52565d67b7e6d7"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 270px; top: 124px;" data-name="shape-d08d9c" data-block-id="465dcea4e4347427a9fb1f36dfa4a8bd"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 430px; top: 157.5px;" data-name="shape-2a98d7" data-block-id="ab8b22b1e4de7721fcc4ceb01d91c5e5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 510px; top: 46.5px;" data-name="shape-e5ad4a" data-block-id="8618fdf4510f3463e6ddb5c9ba61f44c"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 648px; top: 191px;" data-name="shape-2aafad" data-block-id="1f57f1e0c0ae8697438de02ac3dec276"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 500px; top: 306px;" data-name="shape-7d3fa0" data-block-id="917ae184e0b72b44d431a3c435f17a8f"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 190px; top: 258px;" data-name="shape-165be4" data-block-id="6541acffd1895a44a3c0ff7491f12386"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 350px; top: 379px;" data-name="shape-e0d448" data-block-id="12d66847cf5b1940ff0415221bba85cf"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 337px; top: 264px;" data-name="shape-98d510" data-block-id="2a8aa4b4f7bb4ec1da786fd6a0389888"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 684px; top: 68px;" data-name="shape-8d09cb" data-block-id="f610f7fc9753c87a92d95eca016a884d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 535px; top: 186.5px;" data-name="shape-2dd8fe" data-block-id="4400f5347761147fc586f1583ab82bbe"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 764px; top: 430px;" data-name="shape-0f9594" data-block-id="080ee908a1182a0179b34918960e4a31"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 860px; top: 116.5px;" data-name="shape-b247a4" data-block-id="7d8e9b245b9df401c848a38e43a957a2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 761px; top: 223px;" data-name="shape-950996" data-block-id="250cd879965c4d60eb798f2653c6bf04"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 590px; top: 592px;" data-name="shape-f144f9" data-block-id="b255a871c6fc5caf019e3468ddc1aef2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 455px; top: 463.5px;" data-name="shape-519242" data-block-id="9cc4631b7a27997f4e8907ab310547bc"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 670px; top: 306px;" data-name="shape-74b98e" data-block-id="7214f78b6d4582b86d24a9b6858e7bf7"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div></div></section><section data-background-color="rgb(150, 20, 29)" data-id="328ac88d2facac9482330106a4d355ec" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 193px; height: auto;" data-name="text-b4265f" data-block-id="b580f85eadfcc019a7bbe5ac3bc29833">
+    <div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: left; color: rgb(255, 255, 255);">
+<p><strong>Look for patterns</strong><br>
+ </p>
+
+<p>Don't repeat yourself. Remove errors rely on patterns to make the experience predictable.</p>
+
+<p> </p>
+
+<p>When you simplify the process of designing content you automatically simplify the user experience.</p>
+</div>
+</div>
+<div class="sl-block" data-block-type="shape" data-name="shape-6a88aa" style="width: 50px; height: 67px; left: 521px; top: 305.5px;" data-block-id="30845035d386e29715a6f7b8e6c64b73">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
             
-            -----
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 305.5px;" data-name="shape-d08d9c" data-block-id="50f8b11a1079ecf3a52b766a7c65be01">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 305.5px;" data-name="shape-2a98d7" data-block-id="f4365420f06c353ac94fa68b39b49202">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 227.5px;" data-name="shape-e5ad4a" data-block-id="bf777c5030316d370e6d354e7ea0a512">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 227.5px;" data-name="shape-2aafad" data-block-id="39c69915401f1bac5bc5d45d82cc02c2">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 227.5px;" data-name="shape-7d3fa0" data-block-id="4b397888f99b4c66851a7b0333aa6738">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 305.5px;" data-name="shape-165be4" data-block-id="f61ef35e66abde72988c35fbc918e013">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 305.5px;" data-name="shape-e0d448" data-block-id="955ad08a836f65dafa6d0aa509843429">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 305.5px;" data-name="shape-98d510" data-block-id="0a05574666b01967bd619ddacc1fab65">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 383.5px;" data-name="shape-8d09cb" data-block-id="c462958e295230b4babe81ebd6be3209">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 227.5px;" data-name="shape-2dd8fe" data-block-id="e4236adcd56396c79550f510dfe545cf">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 383.5px;" data-name="shape-0f9594" data-block-id="909b30af3d8ccb01cbddbfda70963842">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 383.5px;" data-name="shape-b247a4" data-block-id="d622b0464c35119c889b2a73ec110c4e">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 383.5px;" data-name="shape-950996" data-block-id="c54946a7b005018766e097085360f01e">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 227.5px;" data-name="shape-f144f9" data-block-id="0420f175a472fe2e0c69ab98f38aa732">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 383.5px;" data-name="shape-519242" data-block-id="1c1035bdb4b557742a07be23b0cb92ba">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 383.5px;" data-name="shape-74b98e" data-block-id="28520ffce935d59d5da3b5972eff1cb5">
+    <div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(173, 29, 39)" data-shape-stretch="true" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67">
+            
+        <rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(173, 29, 39)"></rect></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 290.401px; height: 290.401px; left: 909.2px; top: 634px;" data-name="shape-ddea04" data-block-id="4f4cb0a36b8de52e8111e4e314800dd9">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 290 290">
+            
+        <ellipse rx="145.2005" ry="145.2005" cx="145.2005" cy="145.2005" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 284.2px; height: 284.2px; left: 909.2px; top: 634px;" data-name="shape-98b14e" data-block-id="a6f6302a8c842d9682c4f8b6615f04e8">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 29;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 284 284">
+            
+        <ellipse rx="142.1" ry="142.1" cx="142.1" cy="142.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div>
+</div>
+<div class="sl-block" data-block-type="shape" style="width: 284.2px; height: 284.2px; left: 903px; top: 652px;" data-name="shape-8d2a07" data-block-id="f13bdf55c18f1be3b47dc9fc290a27da">
+    <div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 30;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 284 284">
+            
+        <ellipse rx="142.1" ry="142.1" cx="142.1" cy="142.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div>
+</div></section><section data-background-color="rgb(184, 105, 22)" data-id="796b221dfff19be2e659fce6961b2fc2" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-6a88aa" style="width: 50px; height: 67px; left: 521px; top: 305.5px;" data-block-id="032fdc8fb8ac1960d1478b46b82bb0d4"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 305.5px;" data-name="shape-d08d9c" data-block-id="3ac8ca0bf196e639cb9e6a037ef6ea18"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 305.5px;" data-name="shape-2a98d7" data-block-id="2a79d5967a11c22c2266fd8954ca3872"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 227.5px;" data-name="shape-e5ad4a" data-block-id="cebf923a9d424cec0cc2019cec94b562"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 227.5px;" data-name="shape-2aafad" data-block-id="8c6510de444538f8bf164cc58a303ea9"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 227.5px;" data-name="shape-7d3fa0" data-block-id="856f1d9090c2149c03a9dcbddb95d662"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 305.5px;" data-name="shape-165be4" data-block-id="39e13d47aabdc0ae50741effb38f30e2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 305.5px;" data-name="shape-e0d448" data-block-id="db0ae6106c28f0dfccdd8f4b309f1109"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 305.5px;" data-name="shape-98d510" data-block-id="63767bf5ef2cd1dbe95f93c7fe75c8fd"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 383.5px;" data-name="shape-8d09cb" data-block-id="110eb6583777019e11eb63c0bee5d752"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 227.5px;" data-name="shape-2dd8fe" data-block-id="ea0303ffc22814dabe9980b9e551d388"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 651px; top: 383.5px;" data-name="shape-0f9594" data-block-id="cea04794c907487887ccfdf5a1ff5d52"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 383.5px;" data-name="shape-b247a4" data-block-id="3e5d617fe7a36659a24c660295c98fb5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 586px; top: 383.5px;" data-name="shape-950996" data-block-id="01cff38d683c1b2e0350fc235a9a6eaa"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 716px; top: 227.5px;" data-name="shape-f144f9" data-block-id="7d7ecd328f981d322f7e21496d1f527c"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 383.5px;" data-name="shape-519242" data-block-id="6318e2c59c229bfc3559d2dfb6990222"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 521px; top: 383.5px;" data-name="shape-74b98e" data-block-id="fe5ea0a0e0a1684e4128010c77cc86ed"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 192px; height: auto;" data-name="text-b4265f" data-block-id="149130babb168b3afc9886ca36c7fe5d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 28; text-align: left; color: rgb(0, 0, 0);">
+<p><strong>Then, make things cohesive</strong></p>
 
-            ## made with
+<p> </p>
 
-            #### [reveal.js](https://github.com/hakimel/reveal.js)
+<p>The next step is to turn consistent experiences in cohesive experiences.This is where content design becomes more than just "linting."</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 536.2px; height: 536.2px; left: -114.799px; top: -48.1px;" data-name="shape-ddea04" data-block-id="f3cd3892d99ca6e4d20cbd02f0335b14"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 536 536"><ellipse rx="268.1" ry="268.1" cx="268.1" cy="268.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div></section><section data-background-color="rgb(184, 105, 22)" data-id="49e6596e8a71c1fc574eb88b361b7e81" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-6a88aa" style="width: 50px; height: 67px; left: 731px; top: 458.5px;" data-block-id="af09b9a4c48a4a49273065c3f09c9ce6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 209.75px;" data-name="shape-d08d9c" data-block-id="2db6f1c6416840eeab6496e7dfc70bb5"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 802px; top: 292.5px;" data-name="shape-2a98d7" data-block-id="fb627e0d36efcc1fa48d06050f45b3c0"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 621.25px; top: 209.75px;" data-name="shape-2aafad" data-block-id="a691a26d9a82c1958f73d6a5f6d5f184"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 122.25px; height: 67px; left: 657px; top: 129px;" data-name="shape-7d3fa0" data-block-id="2da57e544d8071d5a23f0bcf9379999b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 29;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 122 67"><rect width="122.25" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 292.5px;" data-name="shape-165be4" data-block-id="30611eefb1748f690005bbe13497f95b"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 763px; top: 209.75px;" data-name="shape-e0d448" data-block-id="95a2571ecd0bbf53125f283d0280c794"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 30;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 375.5px;" data-name="shape-8d09cb" data-block-id="ecda938605b6a4ad4e064e5ec4c62aa1"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 31;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 589px; top: 457.5px;" data-name="shape-0f9594" data-block-id="5704307953031324ad183084ae59e198"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 32;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 589px; top: 294.5px;" data-name="shape-b247a4" data-block-id="4feaa0e1dc7c07f1ff8c3a11dd85458c"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 33;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 552px; top: 374.5px;" data-name="shape-950996" data-block-id="fec78e4bd6c58e869d018237f60ad1cd"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 38;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 802px; top: 458.5px;" data-name="shape-f144f9" data-block-id="b39990d9bf85d8cf1de709c6d5641776"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 34;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 375.5px;" data-name="shape-519242" data-block-id="24c01332ca36d690e414ed9ecf55d543"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 35;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 615px; top: 374.5px;" data-name="shape-74b98e" data-block-id="257fa050984da4d8c3f8b884e124258f"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 36;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 484.2px; height: 484.2px; left: -89.799px; top: -22.1px;" data-name="shape-ddea04" data-block-id="6a15284db44b61ff3e96fab4c3de322e"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 484 484"><ellipse rx="242.1" ry="242.1" cx="242.1" cy="242.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 711px; top: 262.5px;" data-block-id="6b85bb748231cde4a17e84425fecf7a5" data-name="line-ae72e7"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 716.5px; top: 341.5px;" data-block-id="8b8fce5d1d738c36d42edfe2dc6a69e7" data-name="line-78f661"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 621.5px; top: 350.5px;" data-block-id="5df44cb2841d738cd29f885e94e1f188" data-name="line-ab3bd9"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 589px; top: 420px;" data-block-id="20da09c7da84989d824ba16aa16dd3f1" data-name="line-ee57c4"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 731px; top: 427.5px;" data-block-id="d4cf4525924126f58b275de116b327e9" data-name="line-5bdc04"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 806.5px; top: 427.5px;" data-block-id="6b16edc5f363a6edbf5c8bc39c98ae13" data-name="line-df8bad"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 806.5px; top: 341.5px;" data-block-id="2cde442501c7238e6891ee969fe4589f" data-name="line-113b3c"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 617.625px; top: 256px;" data-block-id="6988fe2a3eb642b3790b8b5fd52d976b" data-name="line-01e553"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 585.125px; top: 338px;" data-block-id="63e73a8ab575cfcab3de0b37e90f95e0" data-name="line-28d13d"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 799.5px; top: 255px;" data-block-id="b54a8412749326e2e8e6543f23e9b6a0" data-name="line-7eefd7"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 768px; top: 195px;" data-block-id="a96e97b8a9613bf7fc401135de267e5d" data-name="line-f4a9c7"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 717.625px; top: 173px;" data-block-id="4c1183d6784af471fb4e6a7254f70ba5" data-name="line-514c03"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 660.75px; top: 173px;" data-block-id="f95bf4c2b73ef2bff8721f2a1176ca5f" data-name="line-7035f3"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 191.25px; height: auto;" data-name="text-b4265f" data-block-id="ab35f3e5603613fda3610d7903632b37"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 37; text-align: left; color: rgb(0, 0, 0);">
+<p><strong>Find the through line</strong></p>
 
-            #### [excalidraw](https://github.com/excalidraw/excalidraw)
+<p> </p>
 
-          </textarea>
-        </section>
-      </div>
-    </div>
+<p>You started by figuring out what everything was, now you have to line things up into a story and remove anything that doesn't fit.</p>
+</div></div></section><section data-background-color="rgb(184, 105, 22)" data-id="7ac026209c20b3d9cf1ef67a1764b3bd" data-auto-animate=""><div class="sl-block" data-block-type="shape" data-name="shape-6a88aa" style="width: 50px; height: 67px; left: 731px; top: 458.5px;" data-block-id="238f56b7c2e51de31e741440c4c39822"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(111, 168, 220)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(111, 168, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 209.75px;" data-name="shape-d08d9c" data-block-id="84a038facfebb989ba396787c1a94894"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(111, 168, 220)" data-shape-stretch="true" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(111, 168, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 802px; top: 292.5px;" data-name="shape-2a98d7" data-block-id="6466b8e211e016b3af0e00577ab0b242"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 621.25px; top: 209.75px;" data-name="shape-2aafad" data-block-id="620b1cb9d2ae6e7074ff05b4bb9b47e3"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 29;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 122.25px; height: 67px; left: 657px; top: 129px;" data-name="shape-7d3fa0" data-block-id="d2742716576fa358afaae8646be36e03"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(111, 168, 220)" data-shape-stretch="true" style="z-index: 30;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 122 67"><rect width="122.25" height="67" rx="0" ry="0" class="shape-element" fill="rgb(111, 168, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 292.5px;" data-name="shape-165be4" data-block-id="69c506bc362abfaafbb4f83ad08d75b0"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(111, 168, 220)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(111, 168, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 763px; top: 209.75px;" data-name="shape-e0d448" data-block-id="ebe75d0710282e23b048a591b396769a"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 31;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 692.5px; top: 375.5px;" data-name="shape-8d09cb" data-block-id="4fe216fc984969a94d2e55bda9fd42f2"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(111, 168, 220)" data-shape-stretch="true" style="z-index: 32;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(111, 168, 220)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 589px; top: 457.5px;" data-name="shape-0f9594" data-block-id="675602b053a2c1505cad270d852a7ca0"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 33;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 589px; top: 294.5px;" data-name="shape-b247a4" data-block-id="d5c7d19030b8794b1d7a01e81d489018"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 34;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 552px; top: 374.5px;" data-name="shape-950996" data-block-id="806b7fac7bc4a6fed6cd906b2484a523"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 39;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 802px; top: 458.5px;" data-name="shape-f144f9" data-block-id="62e53f4710a99c8869ef844ad0d96cc6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 35;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 781px; top: 375.5px;" data-name="shape-519242" data-block-id="ecc62c2dee2cc3a3c92390aaa2258678"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 36;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 50px; height: 67px; left: 615px; top: 374.5px;" data-name="shape-74b98e" data-block-id="08d7dd50526bed0f81466e2f40985441"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(238, 238, 238)" data-shape-stretch="true" style="z-index: 37;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 50 67"><rect width="50" height="67" rx="0" ry="0" class="shape-element" fill="rgb(238, 238, 238)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 314px; left: 86px; top: 196.5px; height: auto;" data-name="text-b4265f" data-block-id="e176772e6f9b2601eab819fb73c727f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; text-align: left; color: rgb(0, 0, 0);">
+<p><strong>This is storytelling</strong></p>
 
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>
-    <script src="reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="reveal.js/plugin/zoom/zoom.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
+<p> </p>
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
-      });
-    </script>
-  </body>
+<p>Because stories are easy to follow and it's how people think. Well-designed experiences lead users some place meaningful.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 735.544px; height: 735.544px; left: -218.544px; top: -105.272px;" data-name="shape-ddea04" data-block-id="8b1e72f47523ed2cb59ce2413692f298"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 736 736"><ellipse rx="367.772" ry="367.772" cx="367.772" cy="367.772" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 711px; top: 262.5px;" data-name="line-ae72e7" data-block-id="5151b6b7b46c41e40950309322b0378b"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 716.5px; top: 341.5px;" data-name="line-78f661" data-block-id="cbc38e8d248fcf63570a043ce2f9b4d1"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 621.5px; top: 350.5px;" data-name="line-ab3bd9" data-block-id="733bf4f1396b3fff823a0bf7bb6138b6"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 589px; top: 420px;" data-name="line-ee57c4" data-block-id="3c1772ea860a265c5832ffbdf32fc22a"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 731px; top: 427.5px;" data-name="line-5bdc04" data-block-id="dd91a3cd7ae5eb39fed8ac5c1200b0a9"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 806.5px; top: 427.5px;" data-name="line-df8bad" data-block-id="370806d4873d33d781cf6cb35bac357c"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 806.5px; top: 341.5px;" data-name="line-113b3c" data-block-id="9aeaac9d9daa4fd86236e87abfd69cdc"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 617.625px; top: 256px;" data-name="line-01e553" data-block-id="30b83cbf27dc75b5228080580d37220f"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 585.125px; top: 338px;" data-name="line-28d13d" data-block-id="ea9f7006fff7b687dca61672e1c7d18f"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 799.5px; top: 255px;" data-name="line-7eefd7" data-block-id="e3dc2aa3a82a24fdbe5475e2e785098b"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 768px; top: 195px;" data-name="line-f4a9c7" data-block-id="729f317719421a9e0c7b3691f836a9c4"><div class="sl-block-content" data-line-x1="13.25" data-line-y1="59.75" data-line-x2="0" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="13.25" height="59.75" viewbox="0 0 13.25 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M13.25 59.75 L0 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M13.25 59.75 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M13.25 59.75 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 717.625px; top: 173px;" data-name="line-514c03" data-block-id="51625cb69ae019c5d69c7d608c37e78e"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 660.75px; top: 173px;" data-name="line-7035f3" data-block-id="7ee829f5077601771b526c118b7f6d30"><div class="sl-block-content" data-line-x1="0" data-line-y1="59.75" data-line-x2="20.5" data-line-y2="0" data-line-color="#aaaaaa" data-line-start-type="none" data-line-end-type="none" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="20.5" height="59.75" viewbox="0 0 20.5 59.75"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#aaaaaa" stroke-width="2" d="M0 59.75 L20.5 0"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 59.75 L20.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 59.75 L20.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 193.401px; height: 193.401px; left: 383.299px; top: 747px;" data-name="shape-9d17e3" data-block-id="b90c9568e2b8d04d1b108971be76829e"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 38;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 193 193"><ellipse rx="96.7005" ry="96.7005" cx="96.7005" cy="96.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></section><section data-background-color="rgb(34, 34, 34)" data-id="ac095e8ff79e6374feb05e035dd1f708" data-auto-animate="" data-transition="fade" data-background-transition="fade" data-autoslide="8000"><div class="sl-block" data-block-type="text" style="width: 480px; left: 240px; top: 290px; height: auto;" data-name="text-b4265f" data-block-id="ebf13ecff7cd33c427e68fd2c1b2cf1c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center; color: rgb(255, 255, 255);">
+<p><strong>Finally, be clear</strong></p>
+
+<p> </p>
+
+<p>The self-actualization part of content design.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 594.2px; height: 594.2px; left: -709.799px; top: -384.45px;" data-name="shape-ddea04" data-block-id="ef39ad6566f9705287ab8bd1148aa0a2"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 594 594"><ellipse rx="297.1" ry="297.1" cx="297.1" cy="297.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 719.401px; height: 719.401px; left: 120.299px; top: 500px;" data-name="shape-9d17e3" data-block-id="919a596b788bd0215b2e38f0ecf3c1db"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 719 719"><ellipse rx="359.7005" ry="359.7005" cx="359.7005" cy="359.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></section><section data-autoslide="8000" data-transition="fade" data-background-color="rgb(34, 34, 34)" data-background-transition="fade" data-id="a0c32687150224a318f33b11ea3e39bf" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 478px; left: 241px; top: 80px; height: auto;" data-name="text-b4265f" data-block-id="f2194925400641b510f5d243c9cd75ae"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center; color: rgb(255, 255, 255);">
+<p><strong>Clarity is emergent</strong></p>
+
+<p> </p>
+
+<p>It happens only after you've made the experience consistent and cohesive.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 594.2px; height: 594.2px; left: -709.799px; top: -384.45px;" data-name="shape-ddea04" data-block-id="61f3de59c2be0be0281c23824557d511"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 594 594"><ellipse rx="297.1" ry="297.1" cx="297.1" cy="297.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 879.401px; height: 879.401px; left: 40.2995px; top: 342px;" data-name="shape-9d17e3" data-block-id="9ec96546c39b1e3d958acc699188fabc"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 879 879"><ellipse rx="439.7005" ry="439.7005" cx="439.7005" cy="439.7005" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></section><section data-autoslide="8000" data-transition="fade" data-background-color="rgb(34, 34, 34)" data-background-transition="fade" data-id="b494814e01a98b00e8b2897b8aa462e0" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 478px; left: 242px; top: 10px; height: auto;" data-name="text-b4265f" data-block-id="33d66782df092e3395e607e69cd98a56"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center; color: rgb(255, 255, 255);">
+<p><strong>It's hard to do</strong></p>
+
+<p> </p>
+
+<p>Most software will become bloated and awkward instead.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 594.2px; height: 594.2px; left: -709.799px; top: -384.45px;" data-name="shape-ddea04" data-block-id="0ef30d8ef5da6224f274062c14986f93"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 131, 2)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 594 594"><ellipse rx="297.1" ry="297.1" cx="297.1" cy="297.1" class="shape-element" fill="rgb(254, 131, 2)"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1301.4px; height: 1301.4px; left: -170.7px; top: 202px;" data-name="shape-9d17e3" data-block-id="def5bc4d76520d87666b4b4f2dfd130d"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgb(254, 193, 2)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1301 1301"><ellipse rx="650.7" ry="650.7" cx="650.7" cy="650.7" class="shape-element" fill="rgb(254, 193, 2)"></ellipse></svg></div></div></section><section data-autoslide="8000" data-transition="fade" data-background-color="rgb(254, 193, 2)" data-background-transition="fade" data-id="327fcaa283adfe69a26563d063287fd7" data-auto-animate=""><div class="sl-block" data-block-type="text" style="width: 478px; left: 241px; top: 262.5px; height: auto;" data-name="text-b4265f" data-block-id="2cc3643d00a460e2d42bca364b52fba9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12; text-align: center; color: rgb(0, 0, 0);"><h1><strong>Clarity is the ultimate goal</strong></h1></div></div></section><section data-id="53599284fd10c247894da99d2e6066b5" data-auto-animate="" data-visibility="hidden"><div class="sl-block" data-block-type="shape" data-name="shape-f4896d" data-block-id="1be4a76121f7656e07ef1f9fb5e4a5e5" style="width: 266.995px; height: 700px; left: 0px; top: 10px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 267 700"><rect width="266.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 266.995px; height: 700px; left: 693.005px; top: 10px;" data-block-id="78875398df0ea3b78984d83cee5501a1" data-name="shape-370206"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 267 700"><rect width="266.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 332.995px; height: 700px; left: 313.502px; top: 10px;" data-block-id="430cdc95668404d88c1dfbbfcfcec233" data-name="shape-368809"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 333 700"><rect width="332.995" height="700" rx="0" ry="0" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div></section><section data-background-color="rgb(26, 52, 94)" data-id="c2731fdfeacce7d276882d45dc1ae41f">
+<div class="sl-block" data-block-type="text" data-name="text-6ac3b1" style="height: auto; width: 600px; left: 180px; top: 490.5px;" data-block-id="8ebb8b1e9e51a1674a405590251fdfeb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; color: rgb(255, 255, 255); transition-duration: 0.6s; transition-delay: 0.7s;" data-animation-type="slide-up"><p>hey@lookandpoint.com</p></div></div>
+<div class="sl-block" data-block-type="image" style="width: 852.48px; height: 426.24px; left: 53.76px; top: 133.88px; min-width: 1px; min-height: 1px;" data-name="image-072ff5" data-block-id="55313731abfea051b4bc14389fd45a62"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2500" data-natural-height="1250" data-lazy-loaded="" data-src="3c/9eb2c7cfa1deed8ebfccdf8ae9a0526d.png"></div></div></section><section data-auto-animate="" data-id="aed96dacbbdd12d2369f44af876ae803" data-visibility="hidden"><div class="sl-block" data-block-type="shape" data-name="shape-f4896d" style="width: 356.995px; height: 700px; left: 0px; top: 10px;" data-block-id="c00d036db77c83426c854af565f71ce8"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 357 700"><rect width="356.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 365.995px; height: 700px; left: 594.005px; top: 10px;" data-name="shape-370206" data-block-id="5d0e522ea5c5e95da208533c7cba7b7d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 366 700"><rect width="365.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 205.995px; height: 700px; left: 377.002px; top: 10px;" data-name="shape-368809" data-block-id="75e56962683106124863ecc9a0b7f60a"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 206 700"><rect width="205.995" height="700" rx="0" ry="0" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div></section><section data-auto-animate="" data-id="1d036c5874fae7576ecfb039ca6f6c9a" data-visibility="hidden"><div class="sl-block" data-block-type="shape" data-name="shape-f4896d" style="width: 422.995px; height: 700px; left: 0px; top: 10px;" data-block-id="dcc3cd3d63e86d27fc83295f549b80c4"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 423 700"><rect width="422.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 413.995px; height: 700px; left: 546.005px; top: 10px;" data-name="shape-370206" data-block-id="ec065b7c4b8c7ec5d943535e8aa988b3"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 414 700"><rect width="413.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 96.995px; height: 700px; left: 433.002px; top: 10px;" data-name="shape-368809" data-block-id="12ed812685854ef3c940e12d728f661d"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 97 700"><rect width="96.995" height="700" rx="0" ry="0" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div></section><section data-id="dc929d9087b037f53ca9cf2d639aec0a" data-auto-animate="" data-visibility="hidden"><div class="sl-block" data-block-type="shape" data-name="shape-f4896d" style="width: 266.995px; height: 700px; left: -186.995px; top: -4px;" data-block-id="d0baed4b62c02bd2aebba05ec081ab99"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 267 700"><rect width="266.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 266.995px; height: 700px; left: 846.005px; top: 10px;" data-name="shape-370206" data-block-id="680bcd9b560f0c2458e8c4de47ca6bfe"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 267 700"><rect width="266.995" height="700" rx="0" ry="0" class="shape-element" fill="#000000"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 726.995px; height: 700px; left: 104.502px; top: 10px;" data-name="shape-368809" data-block-id="8cdb65cd7b79d5a1a7c9803134768db9"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(106, 168, 79)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 727 700"><rect width="726.995" height="700" rx="0" ry="0" class="shape-element" fill="rgb(106, 168, 79)"></rect></svg></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2671802,"slug":"3c","title":"The three sees of content design","description":"The three sees of content design. A companion to lookandpoint.com/three-sees","width":960,"height":720,"margin":0.05,"visibility":"all","published_at":"2024-04-04T21:42:38.530Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/f4d46d901d8ebbc0b69e194cb738042c/thumb.jpg?1736116049","view_count":220,"user":{"id":2048768,"username":"vsrixyz","name":"V Sri","description":"Content designer, wordsmythe","thumbnail_url":"https://www.gravatar.com/avatar/2e916e80b3e51d8bd5ae5ec38798df33?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"pro","team_id":null,"settings":{"id":25333116,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"overpass2","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":23,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":3,"data_updated_at":1736116272683,"font_typekit":"","font_google":"Inter:300,500,700","time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{"ed07b60ac29319af5533b5943327e01f":"","33f54eabbc68884c15d536e54fe28b88":"","53599284fd10c247894da99d2e6066b5":"","dc929d9087b037f53ca9cf2d639aec0a":"","aed96dacbbdd12d2369f44af876ae803":"","1d036c5874fae7576ecfb039ca6f6c9a":"","3fba076d9f4e1e8cb4bc56984da1dd24":"","da2f68dbb9f2f7d8b809220ee9a9de56":"","4c8d9098af21b16635afe66c7aab755b":"","715f7f085d1bcd582767b1a3438884be":"","903ddb1662925efe40e61bc146a34e1a":"","52f9c681489d054771752c336822c86a":"","e9adef21523e632004dffff550d4a7e4":"","7e2d9522f497e649c72923e11daf32fd":"","80da72610acc6653b84d7d56fd2bacf9":"","c47d22ec01ee724a72c92ade6071a82a":"","311667245b89a67b0b1d53ab45cf67e1":"","94848aa6e64d985de2258fb53155ac85":"","328ac88d2facac9482330106a4d355ec":"","796b221dfff19be2e659fce6961b2fc2":"","49e6596e8a71c1fc574eb88b361b7e81":"","7ac026209c20b3d9cf1ef67a1764b3bd":"","ac095e8ff79e6374feb05e035dd1f708":"","af8d461c80e92c435399c04bcf60af95":"","e766c2f9c5724cfb0124c3c4ea7a2fca":"","a0c32687150224a318f33b11ea3e39bf":"","b494814e01a98b00e8b2897b8aa462e0":"","327fcaa283adfe69a26563d063287fd7":"","b9c39b91ab8deb6d677e0c163e8a262d":"","409b45afcb1ede9502d9b35c6236e76f":"","ba7b0927a4462d82e37fd6ef1c78ae71":"","e1e672ee6c415e8073b7de1915437bbb":"","dbd9e49c782bd49c31838f28c85a469c":"","2437d79409aa1c0a6562b17df781bb85":"","c2731fdfeacce7d276882d45dc1ae41f":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
 </html>

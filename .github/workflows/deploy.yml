@@ -1,0 +1,43 @@
+# Name of the workflow (this will appear in the Actions tab)
+name: Deploy to GitHub Pages
+
+# When the workflow should run
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow when changes are pushed to the "main" branch
+
+# Jobs define the tasks that will be executed
+jobs:
+  deploy:
+    # The type of machine to run the job on (Ubuntu is the most common)
+    runs-on: ubuntu-latest
+
+    # Steps are the individual tasks within the job
+    steps:
+      # Step 1: Check out the repository
+      # This grabs your code so the workflow can work with it
+      - name: Checkout code
+        uses: actions/checkout@v3  # This is a pre-built action to fetch your repository
+
+      # Step 2: Install dependencies (if needed)
+      # If your project uses a package manager like npm, yarn, or pip, add this step
+      # For a simple static site, you can skip this step
+      - name: Install dependencies
+        run: npm install  # Example for a Node.js project; adjust for your setup
+
+      # Step 3: Build the project (if needed)
+      # If your project needs to be built (e.g., React, Hugo, Jekyll), add this step
+      # For a simple static site, you can skip this step
+      - name: Build project
+        run: npm run build  # Example for a Node.js project; adjust for your setup
+
+      # Step 4: Deploy to GitHub Pages
+      # This step uses a pre-built action to deploy your site to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # A popular action for deploying to GitHub Pages
+        with:
+          # The GitHub token is automatically provided by GitHub Actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The folder containing the files to deploy (e.g., "build" for React, "public" for Hugo)
+          publish_dir: ./build  # Adjust this to match your build output directory
